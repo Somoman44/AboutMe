@@ -1,0 +1,265 @@
+body{
+    margin:0;
+}
+#hero{
+    background-image: url("./mountains.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+    height:100vh;
+    display:flex;
+    /*justify-content:center;*/
+}
+#hero>div{
+    margin-left:40px;
+}
+#hero h1{
+    font-family:"Kaushan script", serif;
+    font-size:42pt;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top:40px;
+    color:#404040;
+}
+#hero h2{
+    /*text-align: center;*/
+    font-family: sans-serif;
+    font-size:15pt;
+    color:#404040;
+    font-family: "inter";
+}
+#resume{
+    display:grid;
+    grid-template:1fr 1fr 1fr 1fr/1fr 1fr 1fr;
+    padding-left:5vw;
+    padding-right: 5vw;
+    height:110vh;
+    padding-top:12vh;
+    padding-bottom:5vh;
+}
+#resume>div{
+    background-color: #3b8bb0;
+    margin:1rem;
+    border-radius:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    padding-left:7%;
+    padding-right:7%;
+    border:3px solid rgb(108, 228, 255);
+}
+#resume ul{
+    padding:0;
+}
+#resume h2,#resume li, #resume p{
+    text-align: center;
+    color:#F6F1F1;
+    font-family:"poppins";
+}
+#resume h2{
+    font-size:22pt;
+    margin: 0;
+}
+#resume p,#resme li{
+    font-size:13pt;
+}
+#resume li{
+    list-style-type:none;
+}
+#photo >img{
+    height:15rem;
+    width:15rem;
+    border-radius: 50%;
+    padding: 10px;
+    border:2px solid rgb(108, 228, 255);
+
+}
+#photo{
+    grid-area:1/2/3/3;
+    display:flex;
+    justify-content:center;
+    border: none !important;
+}
+#intro{
+    grid-area:3/2/5/3;
+}
+#education{
+    grid-area:2/1/4/2;
+}
+#skills{
+    grid-area:2/3/4/4;
+}
+#skills li{
+    margin-top:5px;
+}
+#resume span{
+    font-weight: 900;
+}
+
+#projects{
+    margin-top: 100px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+hr{
+    border-top:1px,solid,#404040;
+    width: 85%;
+}
+#projects>div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top:50px;
+    gap:20px;
+}
+#projects>h2{
+    font-family: "poppins";
+    font-size: 30pt;
+    margin-top:100px;
+    text-align: center;
+    color: #146C94;
+}
+#projects p{
+    text-align: center;
+    font-family: "poppins";
+    color:#146C94;
+}
+#projects img{
+    height:240px;
+    border-radius:30px;
+}
+#interests{
+    display:flex;
+    flex-direction: column;
+}
+#interests h2{
+    text-align:center;
+    font-size: 30pt;
+    font-family: "poppins";
+    color:#146C94;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+#interests p{
+    font-family: "poppins";
+    color:#146C94;
+
+}
+#interests ul{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+}
+#interests ul>div{
+    display:flex;
+    padding:50px;
+    align-items: center;
+}
+#interests img{
+    height:250px;
+    border-radius:30px;
+    margin:20px;
+}
+#contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "poppins";
+    color:#146C94;
+}
+#contact h2{
+    font-size: 25pt;
+    margin-bottom:0;
+    text-align: center;
+}
+#contact p{
+    font-size:18pt;
+}
+#contact>button{
+    font-size: 20pt;
+    color:white;
+    font-family: "poppins";
+    background-color: #146C94;
+    border:none;
+    padding:15px;
+    border-radius: 40px;
+    margin-top:30px;
+}
+#contact>button>a{
+    color:white;
+    text-decoration: none;
+}
+#contact>button:hover{
+    background-color: #09415b;
+}
+#footer{
+    background-color: #146C94;
+    margin-top:100px;
+    height:30vh;
+    color:white;
+    padding-top: 30px;
+    font-family: "poppins";
+}
+#footer div{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+}
+#footer p{
+    margin-bottom:0;
+    text-align:center;
+    margin-top:20px;
+}
+#footer a{
+    color:white;
+    text-decoration: none;
+}
+#footer a:hover{
+    color:rgb(121, 120, 120);
+}
+
+
+@media screen and (max-width:600px){
+    #hero{
+        justify-content: center;
+    }
+    #hero h1{
+        font-size:30pt;
+    }
+    #hero>div{
+        margin-left:0;
+        text-align:center;
+
+    }
+    #interests ul>div{
+        flex-direction:column;
+    }
+}
+@media screen and (max-width:1100px){
+    #resume{
+        display:flex;
+        flex-direction: column;
+        height:210vh;
+        padding:0;
+    }
+    #resume>div{
+        padding-left:5%;
+        padding-right: 5%;
+        width:50%;
+        margin-left:20%;
+        margin-right: 20%;
+    }
+}
+@media screen and (max-width:400px){
+    #resume>div{
+        padding-left:5%;
+        padding-right: 5%;
+        width:60%;
+        margin-left:15%;
+        margin-right: 15%;
+    }
+}
